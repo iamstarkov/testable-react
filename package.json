@@ -1,5 +1,5 @@
 {
-  "name": "testable-rr",
+  "name": "testable-intl",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,10 @@
     "test": "ava"
   },
   "ava": {
-    "require": ["babel-register", "./.test-env"],
+    "require": [
+      "babel-register",
+      "./.test-env"
+    ],
     "babel": "inherit"
   },
   "keywords": [],
@@ -16,14 +19,18 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
+    "react-intl": "^2.4.0",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "ava": "^0.22.0",
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
+    "browser-env": "^3.2.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "react-dom": "^16.0.0",
