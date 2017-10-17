@@ -2,6 +2,7 @@ import test from 'ava';
 import React from 'react';
 import { mount } from 'enzyme';
 import renderComponent from '../render-component';
+
 import { Component as Menu } from './menu-react-router';
 import defaultTestProps from './default-test-props';
 
