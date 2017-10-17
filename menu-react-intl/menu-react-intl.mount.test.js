@@ -1,8 +1,10 @@
 import test from 'ava';
 import React from 'react';
-import { Component as Menu, defaultTestProps } from './menu-react-intl';
 import { mount } from 'enzyme';
 import renderComponent from '../render-component';
+
+import { Component as Menu } from './menu-react-intl';
+import defaultTestProps from './default-test-props';
 
 // prettier-ignore
 const mountComponent = renderComponent(React, mount, Menu, defaultTestProps);

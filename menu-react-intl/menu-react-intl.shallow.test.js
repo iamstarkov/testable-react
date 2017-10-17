@@ -1,8 +1,10 @@
 import test from 'ava';
 import React from 'react';
-import { Component as Menu, defaultTestProps } from './menu-react-intl';
 import { shallow } from 'enzyme';
 import renderComponent from '../render-component';
+
+import { Component as Menu } from './menu-react-intl';
+import defaultTestProps from './default-test-props';
 
 // prettier-ignore
 const shallowComponent = renderComponent(React, shallow, Menu, defaultTestProps);

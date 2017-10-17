@@ -23,11 +23,5 @@ Menu.defaultProps = {
   FormattedMessage,
 };
 
-const defaultTestProps = {
-  intl: { formatMessage: x => x.id },
-  FormattedMessage: props => null,
-  messages: rawMessages,
-};
-
-export { Menu as Component, rawMessages as messages, defaultTestProps };
+export { Menu as Component, rawMessages as messages };
 export default injectIntl(Menu);
